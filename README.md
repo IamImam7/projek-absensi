@@ -1,66 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SAKAM - Sistem Absensi Karyawan Modern
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel)
+![Livewire](https://img.shields.io/badge/Livewire-3.x-4B5563?style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-## About Laravel
+SAKAM adalah aplikasi web *full-stack* yang dibangun sebagai studi kasus dan portofolio untuk menunjukkan keahlian dalam ekosistem **Laravel** dan **TALL Stack**. Aplikasi ini menyediakan solusi lengkap dan modern untuk manajemen kehadiran karyawan secara digital, mulai dari absensi harian, manajemen cuti, hingga otomatisasi proses HR.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> *Screenshot Halaman Admin*
+![Image](https://github.com/user-attachments/assets/3d259e1a-d150-4a30-9bd8-2965261d4684)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Image](https://github.com/user-attachments/assets/fd26ddee-c8f7-42eb-b533-8016809248f0)
 
-## Learning Laravel
+![Image](https://github.com/user-attachments/assets/bdbeae75-2cc7-48ad-ae62-bca7d11355a6)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Image](https://github.com/user-attachments/assets/0d4607c9-aab6-46ea-92f2-1afa7158a61c)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![Image](https://github.com/user-attachments/assets/546c93f5-ca0d-4705-82d0-75db5af3142b)
+> *Screenshoots Halaman User*
+![Image](https://github.com/user-attachments/assets/491aafad-5ac0-4364-b6a5-49229bc1d099)
+![Image](https://github.com/user-attachments/assets/9144a63c-7522-482f-a096-99148aba1965)
+![Image](https://github.com/user-attachments/assets/51b5c96b-1fac-4e3c-9efa-b28c65c6c9ea)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Fitur Unggulan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Aplikasi ini dirancang dengan fitur-fitur komprehensif yang mencerminkan kebutuhan bisnis di dunia nyata:
 
-### Premium Partners
+* 🔐 **Autentikasi & Otorisasi Berbasis Peran**
+    * Sistem login/register aman menggunakan **Laravel Breeze**.
+    * Manajemen peran **Admin** & **Karyawan** dengan hak akses dinamis menggunakan paket **Spatie Laravel Permission**.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+* 🕒 **Sistem Absensi Fleksibel**
+    * Fitur **Check-in** & **Check-out** harian dengan validasi jam keterlambatan otomatis.
+    * Dukungan **Absensi di Luar Kantor (Remote/Dinas)** yang mewajibkan unggah **bukti foto** dan catatan pekerjaan.
 
-## Contributing
+* ⚙️ **Administrasi & Otomatisasi Cerdas**
+    * **Manajemen Karyawan (CRUD)** penuh oleh Admin.
+    * **Sistem Pengajuan Cuti/Izin** dengan alur persetujuan oleh Admin.
+    * **Penandaan Absen Otomatis** menggunakan **Scheduled Task (Cron Job)** untuk karyawan yang tidak melakukan check-in.
+    * **Halaman Pengaturan Global** agar Admin bisa mengubah aturan bisnis (jam kerja, lokasi kantor) tanpa mengubah kode.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* 📊 **Pelaporan & Analitik**
+    * **Dashboard Statistik** dengan kartu rekapitulasi harian dan grafik kehadiran bulanan interaktif.
+    * **Riwayat Absensi** lengkap dengan fitur filter berdasarkan rentang tanggal.
+    * Fitur **Ekspor Laporan** ke format **PDF** dan **Excel**.
 
-## Code of Conduct
+* 🔔 **Pengalaman Pengguna Modern**
+    * **Notifikasi Real-time** untuk Admin (via *database polling*) saat ada pengajuan cuti baru.
+    * **UI Modern & Responsif** dengan layout sidebar kiri, animasi, dan dukungan penuh untuk perangkat mobile.
+    * **Halaman Kustom** untuk Login, Register, Error (404/500), dan Halaman Sambutan.
+    * **Peta Interaktif** di halaman pengaturan untuk memilih lokasi kantor dengan mudah.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Teknologi yang Digunakan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+| Kategori | Teknologi |
+| :--- | :--- |
+| **Backend** | Laravel 10, PHP 8.x |
+| **Frontend** | Livewire 3, Alpine.js |
+| **Styling** | Tailwind CSS 3 |
+| **Database** | MySQL / PostgreSQL |
+| **Paket Utama**| Spatie Laravel Permission, Maatwebsite/Excel, Barryvdh/laravel-dompdf, Spatie Laravel Settings |
+| **Library Frontend** | Chart.js, Leaflet.js, Toastify.js |
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🚀 Instalasi Lokal
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
+
+1.  **Clone repositori:**
+    ```bash
+    git clone [https://github.com/username/nama-repo.git](https://github.com/username/nama-repo.git)
+    cd nama-repo
+    ```
+2.  **Install dependensi Backend & Frontend:**
+    ```bash
+    composer install
+    npm install
+    ```
+3.  **Setup file `.env`:**
+    ```bash
+    cp .env.example .env
+    ```
+4.  **Generate application key:**
+    ```bash
+    php artisan key:generate
+    ```
+5.  **Konfigurasi database** (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`) dan **kredensial email** (`MAIL_...`) Anda di dalam file `.env`.
+
+6.  **Jalankan migrasi dan seeder** untuk membuat tabel dan data awal:
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+7.  **Buat symbolic link** untuk storage (agar foto bukti bisa diakses):
+    ```bash
+    php artisan storage:link
+    ```
+8.  **Jalankan server Vite dan Laravel** di dua terminal terpisah:
+    ```bash
+    # Di terminal 1
+    npm run dev
+
+    # Di terminal 2
+    php artisan serve
+    ```
+
+Aplikasi sekarang berjalan di `http://127.0.0.1:8000`.
+
+---
+
+## 🔑 Kredensial Demo
+
+Gunakan akun berikut untuk login dan mencoba fitur aplikasi:
+
+| Peran | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@sakam.com` | `password` |
+| **Karyawan**| `budi.s@sakam.com` | `password` |
+| **Karyawan Lain**| `citra.l@sakam.com` | `password` |
